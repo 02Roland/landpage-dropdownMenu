@@ -1,0 +1,167 @@
+@media screen and  (min-width: 900px) {
+    body{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    header{
+        padding-top: 0px;
+        height: 5%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    br{
+        display: block;
+    }
+    main{
+        height: 80%;
+        flex-direction: row-reverse;
+    }
+
+    #contain-menu{
+        display: none;
+    }
+
+    .img-contain{
+        height: 100%;
+        background-image: url("images/image-hero-desktop.png");
+    }
+    .containe{
+        align-items: start;
+        justify-content: space-between;
+        padding-left: 180px;
+        padding-bottom: 0px;
+        height: 100%;
+        width: 50%;
+        padding-right: 0;
+    }
+    .containe p{
+        width: 100%;
+        text-align: left;
+        padding: 0;
+        
+    }
+    .img-contain{
+        width: 50%;
+        height: 100%;
+    }
+    #partenaires{
+        width: 80%;
+        justify-content: space-between;
+    }
+    .containe h2, .containe p{
+        margin-top: 0px;
+    }
+    .containe h2{
+        width: 100%;
+        margin-top: 40px;
+        font-size: 60px;
+        width: 80%;
+        font-weight: 600;
+        text-align: left;
+    }
+    
+    .btn{
+        margin-bottom: 10px;
+    }
+    nav{
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .bare-menu{
+        flex-direction: row;
+        width: 90%;
+        padding: 0;
+        justify-content: space-between;
+        align-items: center !important;
+    }
+
+    .bare-menu ul{
+        display: flex;
+        list-style-type: none;
+        flex-direction: row !important;
+        align-items: center !important;
+        justify-content: center !important;
+        text-align: center !important;
+        width: auto !important;
+        height: auto !important;
+        margin: 0px;
+    }
+    .bare-menu ul li{
+        margin-top: 0px !important;
+        width: 120px;
+        margin-top: 10px !important;
+    }
+    li:not(li:first-child){
+        margin-right: 5px;
+    }
+
+    .bare-menu .ul li a img{
+        margin-left: 5px;
+    }
+
+    .boutons{
+        flex-direction: row;
+        width: 250px;
+        justify-content: space-around;
+        align-items: center;
+    }
+    #btn-menu-1, #btn-menu-2{
+        color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #btn-main:hover{
+        color: black;
+        background-color: white;
+        border: 1px solid black;
+    }
+    .blog{
+        height: 75%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: start;
+    }
+    .blog button{
+        width: 150px;
+    }
+    
+}
+
+@media screen and (min-width: 1367px){
+    .blog{
+        height: 75%;
+    }
+    .containe h2{
+        width: 100%;
+        margin-top: 70px;
+        font-size: 85px;
+        width: 80%;
+        font-weight: 700;
+    }
+
+    .btn{
+        margin-bottom: 10px;
+    }
+    .containe p{
+        width: 78%;
+        text-align: left;
+        padding: 0;
+        margin-top: 10px;
+        
+    }
+}
+
+@media screen and (max-width: 1300px){
+    .yves{
+        display: none;
+    }
+    
+}

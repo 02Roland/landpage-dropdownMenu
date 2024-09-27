@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="medias.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+    
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="#" id="beuger-menu"><img src="images/logo.svg" alt=""></a>
+        <div id="contain-menu">
+          <a href="#" data-bs-toggle="offcanvas" data-bs-target="#demo">
+            <img src="images/icon-menu.svg" alt="">
+          </a>
+        </div>
+        <div class="bare-menu yves">
+          <ul>
+            <li class="MM"><a href="#">Features <img src="images/icon-arrow-down.svg" alt=""></a><br>
+            </li>
+            <li><a href="#">Company <img src="images/icon-arrow-down.svg" alt=""></a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">About</a></li>
+          </ul>
+          <div class="boutons">
+            <button class="btn-menu " id="btn-menu-1">Login</button>
+            <button class="btn-menu btn" id="btn-menu-2">Register</button>
+          </div>
+        </div>
+      </nav>
+      <div class="offcanvas offcanvas-end" id="demo" style="max-width: 60%;">
+        <div class="offcanvas-header">
+          <img src="images/icon-close-menu.svg" type="button" class=" text-reset ms-auto" data-bs-dismiss="offcanvas" alt="">
+        </div>
+        <div class="offcanvas-body">
+          <ul class="off">
+            <li class="dropdown"><a class="nav-link drop" data-bt-toggle="dropdown" href="#">Features<img src="images/icon-arrow-down.svg" class="ms-3" alt=""><img src="images/icon-arrow-up.svg" alt="" class="Arro-up ms-3"></a>
+              <ul class="dorpdown-menu">
+                <li><a href="" class="dorpdown-tem nav-link"><img class="me-2" src="images/icon-todo.svg" alt="">Todo List</a></li>
+                <li><a href="" class="dorpdown-tem nav-link"><img class="me-2" src="images/icon-calendar.svg" alt="">Calendar</a></li>
+                <li><a href="" class="dorpdown-tem nav-link"><img class="me-2" src="images/icon-reminders.svg" alt="">Reminders</a></li>
+                <li><a href="" class="dorpdown-tem nav-link"><img class="me-2" src="images/icon-planning.svg" alt="">Plannig</a></li>
+              </ul>
+            </li>
+            <li class="dropdown"><a class="nav-link drop" data-bt-toggle="dropdown" href="#">Company<img src="images/icon-arrow-down.svg" class="ms-3" alt=""><img src="images/icon-arrow-up.svg" alt="" class="Arro-up ms-3"></a>
+              <ul class="dorpdown-menu">
+                <li><a href="" class="dorpdown-tem nav-link">History</a></li>
+                <li><a href="" class="dorpdown-tem nav-link">Our Team</a></li>
+                <li><a href="" class="dorpdown-tem nav-link">Blog</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">Careers</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+          </ul>
+          <div class="boutons">
+            <button class="btn-menu " id="btn-menu-1">Login</button>
+            <button class="btn-menu btn" id="btn-menu-2">Register</button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="img-contain"></div>
+      <div class="containe">
+        <div class="blog">
+          <h2>Make<br> remote work</h2>
+          <p>
+          Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.
+          </p>
+        <button class="btn1" id="btn-main">Learn more</button>
+        </div>
+        <div id="partenaires">
+          <div class="partenaire" id="partenai1"></div>
+          <div class="partenaire" id="partenai2"></div>
+          <div class="partenaire" id="partenai3"></div>
+          <div class="partenaire" id="partenai4"></div>
+        </div>
+      </div>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
